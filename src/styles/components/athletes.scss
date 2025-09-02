@@ -1,4 +1,6 @@
 .athletes{
+    padding: 125px;
+
     h2{
         color: var(--color-black);
         font-family: var(--font-primary);
@@ -8,7 +10,7 @@
 
     p{
         text-align: right;
-        max-width: 55%;
+        padding-bottom:50px;
     }
 }
 
@@ -16,4 +18,69 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+}
+
+.card_media{
+    position:relative;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.hover{
+    position:absolute;
+    top:70%;
+    left:0;
+    z-index: 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    gap:80px;
+    margin:25px 0;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+
+    h3{
+        color: var(--color-white);
+        font-size: var(--font-size-h2-smale);
+        font-weight: 600;
+    }
+
+    .icon{
+        color: var(--color-white);
+    }
+}
+
+.card_media::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    opacity:0;
+}
+
+.card_media:hover::before {
+    opacity:1;
+}
+
+.card:hover .hover{
+    opacity:1;
 }

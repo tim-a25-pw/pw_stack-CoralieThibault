@@ -32,31 +32,43 @@
     <div class="wrapper">
         <h2>Nos athlètes</h2>
         <p>
-            Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout d’hormones de croissances (à l’exception des Doritos), ils perfoment
+            Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout <br> d’hormones de croissances (à l’exception des Doritos), ils perfoment
             toujours à leur maximum.
         </p>
         
         <div class="cards">
             <div class="card">
-                <img src="assets/images/matt-pratt.jpg" alt="" />
-                <h3>Matt Pratt</h3>
-                <svg class="icon">
-                    <use xlink:href="#icon-snow"></use>
-                </svg>
+                <div class="card_media">
+                    <img src="assets/images/matt-pratt.jpg" alt="" />
+                </div>
+                <div class="hover">
+                    <h3>Matt Pratt</h3>
+                    <svg class="icon icon--xl">
+                        <use xlink:href="#icon-snow"></use>
+                    </svg>  
+                </div>
             </div>
             <div class="card">
-               <img src="assets/images/ben-lavigne.jpg" alt="" />
-                <h3>Ben Lavigne</h3>
-                <svg class="icon">
-                    <use xlink:href="#icon-skate"></use>
-                </svg> 
+                <div class="card_media">
+                    <img src="assets/images/ben-lavigne.jpg" alt="" />
+                </div>
+               <div class="hover">
+                    <h3>Ben Lavigne</h3>
+                    <svg class="icon icon--xl">
+                        <use xlink:href="#icon-skate"></use>
+                    </svg> 
+               </div> 
             </div>
             <div class="card">
-                <img src="assets/images/jeff-white.jpg" alt="" />
-                <h3>Jeff White</h3>
-                <svg class="icon">
-                    <use xlink:href="#icon-ski"></use>
-                </svg>
+                <div class="card_media">
+                   <img src="assets/images/jeff-white.jpg" alt="" /> 
+                </div>
+                <div class="hover">
+                    <h3>Jeff White</h3>
+                    <svg class="icon icon--xl">
+                        <use xlink:href="#icon-ski"></use>
+                    </svg> 
+                </div>
             </div>
         </div>
     </div>
@@ -65,11 +77,26 @@
 
 <!-- Gallery -->
 
-<h2>Sports en image</h2>
+<section class="gallery">
+    <div class="wrapper">
+        <h2>Sports en image</h2>
+    </div>
 
-<img src="assets/images/swiper1.jpg" alt="" />
-<img src="assets/images/swiper2.jpg" alt="" />
-<img src="assets/images/swiper3.jpg" alt="" />
+    <div class="swiper"  data-component="Carousel" data-navigation>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/images/swiper1.jpg" alt="" /> 
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/swiper2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/swiper3.jpg" alt="" />
+            </div>
+            <div class="swiper-pagination"></div> 
+        </div>
+    </div>
+</section>
 
 <!-- Footer -->
 

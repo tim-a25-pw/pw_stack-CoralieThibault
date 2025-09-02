@@ -5,9 +5,6 @@
 .header {
     --header-height: 100px;
 
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     padding: 0 var(--spacing-sm);
     position: sticky;
     top: 0;
@@ -15,8 +12,16 @@
     z-index: 10;
     transition: transform 0.4s $ease-out-expo;
 
+    .wrapper{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 var(--spacing-md);
+        padding: 22px 50px;
+    }
+
     &::before {
-        background-color: var(--color-bg-secondary);
+        background-color: var(--color-white);
         content: '';
         position: absolute;
         top: 0;
@@ -36,9 +41,20 @@
 }
 
 .header__brand {
-    max-width: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     position: relative;
     z-index: 10;
+    font-size: typo(40px);
+    color: var(--color-black);
+    font-weight: bold;
+    font-family: var(--font-primary);
+
+    .icon{
+        color: var(--color-primary);
+    }
 }
 
 // Mettre ton .header__toggle ici
@@ -58,7 +74,7 @@
     z-index: 10;
 
     span {
-        background-color: var(--color-white);
+        background-color: var(--color-black);
         border-radius: 3px;
         height: var(--bar-height);
         width: 100%;
@@ -102,7 +118,7 @@
     }
 }
 .nav-primary {
-    background-color: var(--color-bg-secondary);
+    background-color: var(--color-white);
     position: absolute;
     top: 0;
     left: 0;
@@ -159,18 +175,20 @@
 }
 
 .nav-primary__item {
-    font-size: var(--font-size-h1);
-    color: var(--color-white);
+    font-size: var(--font-size-nav);
+    font-weight: bold;
+    color: var(--color-black);
     text-transform: uppercase;
     position: relative;
+    font-family: var(--font-primary);
 
     &:hover {
         color: inherit;
     }
 
     @media screen and (min-width: $breakpoint-md) {
-        font-size: var(--font-size-h2);
-        color: var(--color-white);
+        font-size: var(--font-size-nav);
+        color: var(--color-black);
         position: relative;
         text-transform: none;
 
@@ -182,7 +200,7 @@
             height: 2px;
             width: 100%;
             content: '';
-            background-color: white;
+            background-color: var(--color-black);
             transform: scaleX(0);
             transition: 0.3s all;
         }

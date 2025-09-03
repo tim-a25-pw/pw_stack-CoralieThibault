@@ -5,22 +5,23 @@
 .swiper-pagination-bullets {
     display: flex;
     justify-content: center;
-    position: static;
 }
 .swiper-pagination-bullet {
-    --swiper-pagination-color: var(--color-primary);
-    --swiper-pagination-bullet-size: 20px;
-    --swiper-pagination-bullet-horizontal-gap: 5px;
 
-    border: 2px solid var(--color-white);
+    --swiper-pagination-bullet-size: 30px;
+    --swiper-pagination-bullet-vertical-gap: 10px;
+
+    border: 15px solid var(--color-black);
     border-radius: 100%;
     transition: border 0.4s ease-out;
 }
 
 .swiper-pagination-bullet-active {
-    border-width: calc(var(--size, 20px) / 2);
+    border-width: calc(var(--size, 30px) / 2);
+    border: 15px solid var(--color-primary);
 }
 
 .swiper-full{
     overflow: visible;
 }
+

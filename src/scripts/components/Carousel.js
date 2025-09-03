@@ -44,7 +44,7 @@ export default class Carousel {
       this.options.slidesPerView = slides;
     }
 
-    if('navigation' in this.element.dataset) {
+    /*if('navigation' in this.element.dataset) {
       this.options.navigation = {
         nextEl: false,
         prevEl: false,
@@ -55,7 +55,7 @@ export default class Carousel {
       this.options.pagination = {
         el: false,
       };
-    }
+    }*/
   }
 
   init() {
